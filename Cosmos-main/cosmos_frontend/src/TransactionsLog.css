@@ -1,0 +1,204 @@
+/* Main container */
+.transaction-log {
+    background-color: #f3f4f6;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 90px;
+}
+
+/* Table Container */
+.table-container {
+    max-height: 400px;
+    overflow-y: auto; 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    position: relative; 
+}
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    background-color: #ffffff;
+    border-spacing: 0;
+}
+
+/* Sticky Header Styling */
+th {
+    padding: 15px;
+    background-color: #4f69b1;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+    position: sticky; /* Keeps header fixed */
+    top: 0; /* Sticks header to the top */
+    z-index: 10; /* Ensures header stays above other rows */
+}
+
+/* Rounded Corners for Header Cells */
+th:first-child {
+    border-top-left-radius: 12px;
+}
+
+th:last-child {
+    border-top-right-radius: 12px;
+}
+
+/* Data Cells */
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Row Styling */
+tr:nth-child(even) {
+    background-color: #f1f5fb;
+}
+
+tr:hover {
+    background-color: #e2e8f0;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* Data Cells */
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Row Styling */
+tr:nth-child(even) {
+    background-color: #f1f5fb;
+}
+
+tr:hover {
+    background-color: #e2e8f0;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Summary Table Styling */
+.summary-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.summary-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.summary-label {
+    font-weight: bold;
+    color: #555;
+    flex: 1;
+    text-align: left;
+}
+
+.summary-value {
+    font-weight: bold;
+    color: #4f69b1;
+    text-align: right;
+}
+
+.summary-item > * {
+    padding: 5px 0;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+}
+
+/* Filter Styling */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(33% - 10px);
+    max-width: 160px;
+}
+
+.filter-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.order-type-filter,
+.date-filter {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #f9fafb;
+}
+
+/* Adjust Buy and Sell Icons */
+.buy-icon,
+.sell-icon {
+    width: 14px; 
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+/* Header Icon Styling */
+.header-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}

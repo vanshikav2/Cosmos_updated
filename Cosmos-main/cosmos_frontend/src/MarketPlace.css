@@ -1,0 +1,142 @@
+/* Body background */
+body {
+  background-color: #e0f7fa; /* Light blue color */
+  margin: 0;  /* Remove default body margin */
+  font-family: 'Times New Roman', sans-serif; /* Ensure consistent font family */
+}
+
+/* Marketplace container */
+.marketplace-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Times New Roman', sans-serif;
+  background-color: #e0f7fa; /* Light blue color */
+}
+
+
+/* Title of the marketplace (now outside scrollable container) */
+.marketplace-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Item list is a vertical stack (flex column) with a scrollbar */
+.item-list {
+  display: flex;
+  flex-direction: column;  /* Stack the items vertically */
+  gap: 20px;  /* Space between items */
+  max-height: 575px;  /* Adjust the height of the scrollable area */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  margin-top: 20px;  /* Space between the title and the list */
+}
+
+/* Each item card */
+.item-card {
+  display: flex;
+  flex-direction: column;  /* Arrange child elements vertically */
+  justify-content: space-between; /* Ensure content is evenly spaced */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  height: 300px; /* Set fixed height for each item card */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Item title and details */
+.item-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.item-price {
+  font-size: 1.2rem;
+  color: #008cba;
+  margin-bottom: 15px;
+}
+
+.item-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px; /* Space above the button */
+  flex-grow: 1; /* Make description take remaining space */
+}
+
+/* Container for the buttons */
+.item-card-buttons {
+  display: flex;
+  justify-content: stretch;  /* Space the buttons apart */
+  margin-top: auto; /* Push buttons to the bottom of the card */
+  gap: 10px; /* Add space between the buttons */
+}
+
+
+/* Button style for view details */
+.view-details-btn {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;  /* Align the button to the left */
+  transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+  background-color: #005f7f;
+}
+
+.buy-data-btn:hover {
+  background-color: #005f7f;
+}
+
+/* Button style for view details */
+.buy-data-btn {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;  /* Align the button to the left */
+  transition: background-color 0.3s ease;
+}
+
+/* Search bar container */
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the input for the search */
+.search-input {
+  width: 60%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #008cba;
+}
+
+/* Item list and card styles remain the same */
